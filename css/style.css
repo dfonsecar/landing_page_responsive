@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-    width: 1440px;
+    width: 1440%;
     /*height: 1024px;*/
     background-color: #000;
     margin: 0 auto;
@@ -34,31 +34,33 @@ a {
 }
 
 header {
-    padding: 40px;
-    height: 100px;
+    padding: 50px;
+    height: 15px;
 }
 
 header>div {
-    width: 200px;
+    width: 200%;
 }
 
 header>:nth-child(2) {
-    width: 960px;
+    width: 970%;
 }
 
 .logo {
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.3em;
 }
 
 .menu {
-    text-align: center;
+    text-align: top left;
+    
 }
 
 .menu a {
-    padding: 0 15px;
+    padding: 0 15%;
+    flex-direction: column;
 }
 
 .menu a.active,
@@ -67,12 +69,12 @@ header>:nth-child(2) {
 }
 
 .body-left {
-    width: 690px;
+    width: 690%;
     height: 974px;
 }
 
 .body-right {
-    width: 750px;
+    width: 400%;
     height: 974px;
     background-image: url('../assets/imgs/body.png');
     background-size: cover;
@@ -80,12 +82,13 @@ header>:nth-child(2) {
 }
 
 .body-left .text {
-    width: 456px;
+    width: 456%;
     margin: 200px auto 50px;
 }
 
 .body-left h1 {
-    font-size: 70px;
+
+    font-size: 40px;
     letter-spacing: 0.11em;
 }
 
@@ -97,7 +100,7 @@ header>:nth-child(2) {
 
 .btn-arrow {
     background-image: url('../assets/icons/arrow.png');
-    width: 60px;
+    width: 60%;
     height: 60px;
     background-position: center;
     border-radius: 60px;
@@ -115,12 +118,12 @@ header>:nth-child(2) {
 }
 
 .social-net i {
-    width: 40px;
-    height: 40px;
+    width: 40%;
+    height: 40%;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 5px;
+    margin: 5%;
 }
 
 .facebook {
@@ -140,16 +143,16 @@ header>:nth-child(2) {
 }
 
 .more-icons {
-    margin: 760px 0 0 60px;
+    margin: 760% 0 0 60%;
 }
 
 .more-icons i {
-    width: 70px;
+    width: 70%;
     height: 70px;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 10px;
+    margin: 10%;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -170,10 +173,10 @@ header>:nth-child(2) {
 }
 
 .green-container {
-    width: 700px;
-    height: 76px;
+    width: 700%;
+    height: 76%;
     background-color: rgba(66, 255, 0, 0.2);
-    margin-top: 270px;
+    margin-top: 270%;
     float: right;
 }
 
@@ -183,4 +186,25 @@ i {
 
 i:hover {
     transform: scale(1.3);
+}
+
+@media screen and (max-width: 575%){
+    .body-left h1 {
+        
+        width: 100%;
+        height: 100px;
+        margin: 0%;
+    }
+}
+
+.body-right {
+    width: 100%;
+}
+.body {
+    flex-wrap: wrap;
+}
+.text {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
